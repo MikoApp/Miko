@@ -10,47 +10,46 @@
 
 </div>
 
-([中文版](README_ZH.md))
+**欢迎使用Miko源代码库!**
+- 目前 Miko 仍在积极开发中,将于 2026 年 2 月前开源.
 
-**Welcome to the Miko source code repository!**
-- Miko is still under active development and will be open-sourced by February 2026.
-
-Miko is an open-source C# cross-platform UI framework that uses C# and WinForms Designer to create desktop and mobile applications. Using Miko, you can develop apps that can run on Web, Android, iOS, Linux, macOS, and Windows from a single shared codebase (Among them, Web, Android and iOS have experimental support).
+Miko是一个开源的C#跨平台UI框架，它使用C#和WinForms设计器来创建桌面和移动应用程序。使用Miko，您可以从单个共享代码库开发可以在Web、Android、iOS、linux、macOS和Windows上运行的应用程序(其中 Web,Android,iOS为实验性支持)。
 
 
 
 ## License
 
-### License
-Miko is covered by the [LGPL License](LICENSE) unless stated otherwise (i.e. for some files that are copied from other projects). 
+### 许可协议
+除非另有说明(即,对于从其他项目复制的某些文件),Miko 受[LGPL 协议](LICENSE) 的保护. 
 
-### Using Miko
 
-###### 1·install the package like this:
+### 使用Miko
+
+###### 1·安装Nuget包:
 ```
 nuget install Miko
 ```
-###### 2·Design forms using WinForms Designer
- - Now, you can use WinForms Designer to add Miko designed controls to the form, and then run the project to view the results.
- - If you want to publish the project as a desktop application, please select the project's TFM as `net8.0`/`net9.0`/… on the publish page.
+###### 2·使用Winforms设计器设计窗体
+ - 现在您可以使用WinForms设计器将基于Miko开发的控件添加到窗体上,最后运行项目查看最终的效果.
+ - 如果要将项目发布为桌面平台的应用,请在发布页面将项目的 TFM 选择为 `net8.0`/`net9.0`/… 
 
 
-### Building from Source
+### 从源代码构建
 
-###### Prerequisites
+###### 先决条件
 
 1. .NET SDK
    - [.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-   - [.NET 9.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
-   - Run `dotnet --info` in a console or powershell window to see which versions you have installed  
+   - [.NET 9.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/0.0)
+   - 在 powershell 中运行命令 `dotnet --info` 查看您当前安装的版本
 
-3. [Visual Studio 2022](https://www.visualstudio.com/downloads/) with the following workloads:
-   - `.NET desktop development` with `.NET Framework 4.7.2 targeting pack` (should be enabled by default)
-   - Optional (to target iOS/Android): `.NET Multi-paltform App UI development` and `Android SDK setup` individual component (enabled by default), then in Visual Studio go to `Tools > Android > Android SDK Manager` and install `NDK` (version 20.1+) from `Tools` tab.
-   - Optional (to build VSIX package): `Visual Studio extension development`
+3. [Visual Studio 2022](https://www.visualstudio.com/downloads/) 工作负载:
+   - `.NET desktop development` with `.NET Framework 4.7.2 目标包` 
+   - 可选 (目标 iOS/Android): `.NET Multi-paltform App UI 开发` 和 单个组件  `Android SDK 设置` (默认勾选), 然后在 Visual Studio 中跳转到 `工具 > Android > Android SDK 管理器` 并从工具选项卡安装 `NDK` (版本 20.1+).
+   - 可选 (构建 VSIX package): `Visual Studio 扩展开发`
 
-###### Build Miko
+###### 编译 Miko
 
-1. Clone the repo with a git UI or open a command prompt, point it to a directory and clone Miko to it: `git clone https://github.com/larks-x/Miko.git`
+1. 从Git客户端或命令行克隆仓库到指定目录: `git clone https://github.com/larks-x/Miko.git`
 
-2. Open `<MikoDir>\src\Miko.sln` with Visual Studio 2022 and build `Demo` in the (it should be the default startup project) or run it from VS's toolbar.
+2. 使用Visual Studio 2022打开 `<MikoDir>\src\Miko.sln` 并构建 `Demo` 项目 (它应该时默认启动项) 或从VS工具栏运行它.
